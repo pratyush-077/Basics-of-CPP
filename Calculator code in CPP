@@ -1,0 +1,24 @@
+# Calculator code in C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    float num1, num2;
+
+    // Input two numbers
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    // Perform operations
+    cout << "Addition: " << num1 + num2 << endl;
+    cout << "Subtraction: " << num1 - num2 << endl;
+    cout << "Multiplication: " << num1 * num2 << endl;
+
+    if (num2 != 0) {
+        cout << "Division: " << num1 / num2 << endl;
+    } else {
+        cout << "Division: Cannot divide by zero!" << endl;
+    }
+
+    return 0;
+}
